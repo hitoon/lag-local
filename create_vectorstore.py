@@ -5,6 +5,12 @@ from langchain_chroma import Chroma
 
 # テキストの読み込み
 loader = TextLoader("output_wikipedia.txt")
+
+# notionを読み込みたい場合
+# from langchain.document_loaders import NotionDirectoryLoader
+# ZIPでダウンロードしたファイルを解凍したディレクトリを指定
+# loader = NotionDirectoryLoader("notion")
+
 raw_docs = loader.load()
 print(len(raw_docs))
 
@@ -12,7 +18,6 @@ print(len(raw_docs))
 text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
 docs = text_splitter.split_documents(raw_docs)
 print(len(docs))
-
 
 # ベクトルストアの保存
 embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
@@ -27,7 +32,6 @@ vector_store = Chroma(
 vector_store.add_documents(documents=docs, embeddings=embeddings)
 
 print("There are", vector_store._collection.count(), "in the collection")
-
 
 # 以下のクエリに近いドキュメントを検索
 query = "スミナガシート"

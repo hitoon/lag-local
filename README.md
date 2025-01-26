@@ -2,6 +2,13 @@
 
 ## setup
 ```shell
+# 仮想環境の作成
+$ python -m venv venv
+
+# 仮想環境の有効化
+$ source venv/bin/activate
+
+# 必要なライブラリのインストール
 $ pip install -r requirements.txt
 ```
 

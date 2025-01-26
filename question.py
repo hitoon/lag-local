@@ -46,4 +46,10 @@ chain = (
 
 output = chain.invoke("秩序の街に関して詳しく教えてください。")
 # output = chain.invoke("スミナガシートはいつ追加されましたか？")
+
+# notion用
+# output = chain.invoke("どんな仕事が向いてますか？なぜそう判断したのかも日付と共に教えてください")
+# output = chain.invoke("エンジニア以外に向いている仕事を教えてください。理由も教えてください。")
+# output = chain.invoke("2年後にはどうなっているでしょうか?")
+# output = chain.invoke("この2年でどのように考え方が変化してますか？")
 print(output)

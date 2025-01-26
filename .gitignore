@@ -284,3 +284,4 @@ pyrightconfig.json
 
 output_wikipedia.txt
 chroma_langchain_db/*
+notion/*
