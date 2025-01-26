@@ -10,6 +10,9 @@ $ source venv/bin/activate
 
 # 必要なライブラリのインストール
 $ pip install -r requirements.txt
+
+# OPEN_AI_API_KEYの設定
+$ export OPEN_AI_API_KEY="sk-xxxxxxxx"
 ```
 
 ## ドキュメントのダウンロード
