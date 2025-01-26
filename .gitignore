@@ -283,5 +283,5 @@ pyrightconfig.json
 # End of https://www.toptal.com/developers/gitignore/api/intellij+all,visualstudiocode,python
 
 output_wikipedia.txt
-chroma_langchain_db/*
-notion/*
+chroma_langchain_db/
+notion/
