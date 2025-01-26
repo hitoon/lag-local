@@ -25,7 +25,7 @@ embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 vector_store = Chroma(
     collection_name="example_collection",
     embedding_function=embeddings,
-    persist_directory="./chroma_langchain_db",  # Where to save data locally, remove if not necessary
+    persist_directory="./chroma_langchain_db",  # ローカルの保存場所
 )
 
 # ベクトル化はVector storeのクラスにデータを保存する際に内部的に実行される

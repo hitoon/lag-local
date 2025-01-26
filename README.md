@@ -26,3 +26,8 @@ $ python create_vectorstore.py
 ```shell
 $ python question.py
 ```
+
+## jupyter notebookの起動
+```shell
+./venv/bin/jupyter notebook
+```
