@@ -31,14 +31,4 @@ vector_store = Chroma(
 # ベクトル化はVector storeのクラスにデータを保存する際に内部的に実行される
 vector_store.add_documents(documents=docs, embeddings=embeddings)
 
-print("There are", vector_store._collection.count(), "in the collection")
-
-# 以下のクエリに近いドキュメントを検索
-query = "スミナガシート"
-retriever = vector_store.as_retriever()
-context_docs = retriever.invoke(query)
-print(f"len = {len(context_docs)}")
-
-first_doc = context_docs[0]
-print(f"metadata = {first_doc.metadata}")
-print(first_doc.page_content)
+print("コレクション内のドキュメント数：", vector_store._collection.count())
