@@ -1,5 +1,9 @@
 # lag-local
 
+## overview
+lag is a typo of RAG
+
+
 ## setup
 ```shell
 # 仮想環境の作成
